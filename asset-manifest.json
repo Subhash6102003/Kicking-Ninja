@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kicking-ninja/static/css/main.9c9cf7df.css",
+    "main.js": "/kicking-ninja/static/js/main.d4ae3aa2.js",
+    "static/js/453.3ed3d2ba.chunk.js": "/kicking-ninja/static/js/453.3ed3d2ba.chunk.js",
+    "index.html": "/kicking-ninja/index.html",
+    "main.9c9cf7df.css.map": "/kicking-ninja/static/css/main.9c9cf7df.css.map",
+    "main.d4ae3aa2.js.map": "/kicking-ninja/static/js/main.d4ae3aa2.js.map",
+    "453.3ed3d2ba.chunk.js.map": "/kicking-ninja/static/js/453.3ed3d2ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c9cf7df.css",
+    "static/js/main.d4ae3aa2.js"
+  ]
+}
