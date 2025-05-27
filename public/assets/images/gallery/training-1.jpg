@@ -1,0 +1,10 @@
+<!-- Placeholder Gallery Image 1 - Training Session -->
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#0f0f23"/>
+  <rect x="50" y="50" width="500" height="300" fill="#282f6c" rx="10"/>
+  <circle cx="200" cy="150" r="40" fill="#e50800"/>
+  <circle cx="400" cy="150" r="40" fill="#e50800"/>
+  <rect x="150" y="250" width="300" height="50" fill="#1a1a2e" rx="25"/>
+  <text x="300" y="280" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold">Training Session</text>
+  <text x="300" y="370" text-anchor="middle" fill="#e0e0e0" font-size="14">Kicking Ninja Academy</text>
+</svg>

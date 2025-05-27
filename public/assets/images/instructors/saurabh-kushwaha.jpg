@@ -1,0 +1,12 @@
+<!-- This is a placeholder for Saurabh Kushwaha's instructor image -->
+<!-- Image dimensions: 400x500px recommended -->
+<!-- Replace this file with actual instructor photo -->
+<svg width="400" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="500" fill="#282f6c"/>
+  <rect x="50" y="100" width="300" height="300" rx="150" fill="#1a1a2e"/>
+  <text x="200" y="210" text-anchor="middle" fill="#e50800" font-size="22" font-weight="bold">Saurabh Kushwaha</text>
+  <text x="200" y="240" text-anchor="middle" fill="#ffffff" font-size="16">Founder &amp; Head Instructor</text>
+  <text x="200" y="270" text-anchor="middle" fill="#e0e0e0" font-size="14">World Record Holder</text>
+  <text x="200" y="300" text-anchor="middle" fill="#e0e0e0" font-size="14">Kicking Ninja Academy</text>
+  <text x="200" y="440" text-anchor="middle" fill="#e50800" font-size="18" font-weight="bold">🏆 720 Kicks in 3 Minutes</text>
+</svg>

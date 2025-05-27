@@ -1,0 +1,10 @@
+<!-- Placeholder Gallery Image 2 - Competition -->
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#0f0f23"/>
+  <rect x="50" y="50" width="500" height="300" fill="#282f6c" rx="10"/>
+  <polygon points="300,100 250,200 350,200" fill="#e50800"/>
+  <circle cx="300" cy="250" r="30" fill="#1a1a2e"/>
+  <text x="300" y="260" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">🏆</text>
+  <text x="300" y="330" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold">Competition Victory</text>
+  <text x="300" y="370" text-anchor="middle" fill="#e0e0e0" font-size="14">Tournament Champions</text>
+</svg>
