@@ -21,7 +21,7 @@
     "swiper": "^11.2.8",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://yourusername.github.io/kicking-ninja",
+  "homepage": "https://subhash6102003.github.io/kicking-ninja",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
