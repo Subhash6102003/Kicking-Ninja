@@ -1,0 +1,10 @@
+<!-- Placeholder Gallery Image 3 - World Record -->
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#0f0f23"/>
+  <rect x="50" y="50" width="500" height="300" fill="#282f6c" rx="10"/>
+  <rect x="100" y="100" width="400" height="200" fill="#e50800" rx="5"/>
+  <text x="300" y="180" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold">WORLD RECORD</text>
+  <text x="300" y="210" text-anchor="middle" fill="#ffffff" font-size="16">720 Kicks in 3 Minutes</text>
+  <text x="300" y="240" text-anchor="middle" fill="#ffffff" font-size="14">Saurabh Kushwaha</text>
+  <text x="300" y="370" text-anchor="middle" fill="#e0e0e0" font-size="14">Record Breaking Moment</text>
+</svg>

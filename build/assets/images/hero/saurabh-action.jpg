@@ -1,0 +1,47 @@
+<!-- Hero Image - Saurabh Kushwaha Action Shot -->
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#282f6c;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0f23;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#heroGradient)"/>
+  
+  <!-- Action figure silhouette -->
+  <g transform="translate(600,400)">
+    <!-- Body -->
+    <ellipse cx="0" cy="50" rx="40" ry="100" fill="#e50800" opacity="0.8"/>
+    <!-- Head -->
+    <circle cx="0" cy="-80" r="35" fill="#e50800" opacity="0.8"/>
+    <!-- Arms -->
+    <ellipse cx="-60" cy="20" rx="15" ry="60" fill="#e50800" opacity="0.8" transform="rotate(-30)"/>
+    <ellipse cx="60" cy="20" rx="15" ry="60" fill="#e50800" opacity="0.8" transform="rotate(30)"/>
+    <!-- Legs -->
+    <ellipse cx="-25" cy="120" rx="15" ry="70" fill="#e50800" opacity="0.8"/>
+    <ellipse cx="25" cy="120" rx="15" ry="70" fill="#e50800" opacity="0.8"/>
+    <!-- Kicking leg -->
+    <ellipse cx="80" cy="60" rx="20" ry="80" fill="#ffffff" opacity="0.9" transform="rotate(45)"/>
+  </g>
+  
+  <!-- Motion lines -->
+  <path d="M 500 300 Q 700 250 900 300" stroke="#e50800" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M 520 320 Q 720 270 920 320" stroke="#e50800" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M 480 280 Q 680 230 880 280" stroke="#e50800" stroke-width="2" fill="none" opacity="0.4"/>
+  
+  <!-- Text overlay -->
+  <text x="100" y="150" fill="#ffffff" font-size="48" font-weight="bold">KICKING NINJA</text>
+  <text x="100" y="200" fill="#e50800" font-size="32" font-weight="bold">WORLD RECORD HOLDERS</text>
+  <text x="100" y="250" fill="#e0e0e0" font-size="24">Saurabh Kushwaha &amp; Anmol Sarkar</text>
+  <text x="100" y="290" fill="#e0e0e0" font-size="18">Jhansi, Uttar Pradesh</text>
+  
+  <!-- Achievement badges -->
+  <rect x="100" y="650" width="200" height="60" fill="#e50800" rx="5" opacity="0.9"/>
+  <text x="200" y="675" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">720 KICKS</text>
+  <text x="200" y="695" text-anchor="middle" fill="#ffffff" font-size="12">3 Minutes</text>
+  
+  <rect x="320" y="650" width="200" height="60" fill="#282f6c" rx="5" opacity="0.9"/>
+  <text x="420" y="675" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">240 BACK KICKS</text>
+  <text x="420" y="695" text-anchor="middle" fill="#ffffff" font-size="12">1 Minute</text>
+</svg>
