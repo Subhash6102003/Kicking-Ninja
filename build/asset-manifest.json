@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kicking-ninja/static/css/main.26e13492.css",
+    "main.js": "/kicking-ninja/static/js/main.5804b532.js",
+    "index.html": "/kicking-ninja/index.html",
+    "main.26e13492.css.map": "/kicking-ninja/static/css/main.26e13492.css.map",
+    "main.5804b532.js.map": "/kicking-ninja/static/js/main.5804b532.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26e13492.css",
+    "static/js/main.5804b532.js"
+  ]
+}
