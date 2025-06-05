@@ -6,6 +6,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import StickyCTA from './components/StickyCTA';
+import ScrollToTop from './components/ScrollToTop';
 
 // Pages
 import Home from './pages/Home';
@@ -15,9 +16,9 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Shop from './pages/Shop';
 
-function App() {
-  return (
+function App() {  return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">

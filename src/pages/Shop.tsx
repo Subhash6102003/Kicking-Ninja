@@ -4,10 +4,9 @@ import { FaShoppingCart, FaStar, FaTags, FaEye } from 'react-icons/fa';
 
 // Sample product data
 const products = [
-  {
-    id: 1,
+  {    id: 1,
     name: 'Kicking Ninja T-Shirt',
-    price: 24.99,
+    price: 699,
     image: '/assets/images/shop/tshirt.jpg',
     category: 'apparel',
     rating: 4.8,
@@ -16,10 +15,9 @@ const products = [
     description: 'Premium quality cotton t-shirt with the Kicking Ninja logo. Available in multiple sizes.',
     colors: ['black', 'red', 'gray']
   },
-  {
-    id: 2,
+  {    id: 2,
     name: 'Training Gloves',
-    price: 34.99,
+    price: 399,
     image: '/assets/images/shop/gloves.jpg',
     category: 'gear',
     rating: 4.7,
@@ -28,10 +26,9 @@ const products = [
     description: 'Professional training gloves for optimal impact protection and comfort during practice.',
     colors: ['black', 'red']
   },
-  {
-    id: 3,
+  {    id: 3,
     name: 'Martial Arts Belt',
-    price: 19.99,
+    price: 1599,
     image: '/assets/images/shop/belt.jpg',
     category: 'gear',
     rating: 4.9,
@@ -40,10 +37,9 @@ const products = [
     description: 'High-quality martial arts belt made from durable cotton. Available in all rank colors.',
     colors: ['white', 'yellow', 'green', 'blue', 'red', 'black']
   },
-  {
-    id: 4,
+  {    id: 4,
     name: 'Training Uniform',
-    price: 59.99,
+    price: 2999,
     image: '/assets/images/shop/uniform.jpg',
     category: 'apparel',
     rating: 4.6,
@@ -51,11 +47,10 @@ const products = [
     bestseller: false,
     description: 'Complete training uniform with Kicking Ninja embroidery. Lightweight and durable fabric.',
     colors: ['white', 'black']
-  },
-  {
+  },  {
     id: 5,
     name: 'Sports Water Bottle',
-    price: 14.99,
+    price: 599,
     image: '/assets/images/shop/bottle.jpg',
     category: 'accessories',
     rating: 4.5,
@@ -67,7 +62,7 @@ const products = [
   {
     id: 6,
     name: 'Training Headband',
-    price: 9.99,
+    price: 199,
     image: '/assets/images/shop/headband.jpg',
     category: 'accessories',
     rating: 4.3,
@@ -79,7 +74,7 @@ const products = [
   {
     id: 7,
     name: 'Kicking Ninja Hoodie',
-    price: 49.99,
+    price: 999,
     image: '/assets/images/shop/hoodie.jpg',
     category: 'apparel',
     rating: 5.0,
@@ -91,7 +86,7 @@ const products = [
   {
     id: 8,
     name: 'Training Kickpad',
-    price: 39.99,
+    price: 1999,
     image: '/assets/images/shop/kickpad.jpg',
     category: 'gear',
     rating: 4.8,
@@ -137,12 +132,11 @@ const ProductCard: React.FC<{product: typeof products[0]}> = ({ product }) => {
           />
         </div>
       </div>
-      
-      {/* Product info */}
+        {/* Product info */}
       <div className="p-4">
         <div className="flex justify-between items-start mb-2">
           <h3 className="text-accent-blue font-bold text-lg">{product.name}</h3>
-          <span className="text-bright-red font-bold">${product.price}</span>
+          <span className="text-bright-red font-bold">₹{product.price}</span>
         </div>
         
         {/* Rating */}
@@ -392,8 +386,7 @@ const Shop: React.FC = () => {
                   </div>
                   <span className="ml-2 text-soft-white/70">(14 reviews)</span>
                 </div>
-                
-                <p className="text-2xl font-bold text-bright-red mb-4">$129.99</p>
+                  <p className="text-2xl font-bold text-bright-red mb-4">₹4999</p>
                 <p className="mb-6 text-soft-white/80">
                   Celebrate Saurabh's incredible achievement with this exclusive commemorative set
                   including a signed certificate, limited edition t-shirt, and commemorative medal.

@@ -4,11 +4,10 @@ import ContactSection from '../components/ContactSection';
 
 const Contact: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'classes' | 'programs'>('classes');
-  
-  return (
-    <div className="pt-20">
+    return (
+    <div className="pt-16 xs:pt-18 sm:pt-20">
       {/* Hero Section */}
-      <section className="bg-deep-blue text-soft-white py-20">
+      <section className="bg-deep-blue text-soft-white py-12 xs:py-16 sm:py-20">
         <div className="container-custom">
           <motion.div 
             className="max-w-3xl mx-auto text-center"
@@ -16,40 +15,38 @@ const Contact: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">Join Our Academy</h1>
-            <div className="h-1 w-20 bg-bright-red mx-auto mb-6"></div>
-            <p className="text-xl">
+            <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-4 xs:mb-6">Join Our Academy</h1>
+            <div className="h-1 w-16 xs:w-20 bg-bright-red mx-auto mb-4 xs:mb-6"></div>
+            <p className="text-lg xs:text-xl">
               Take the first step in your martial arts journey and train with world record holders.
             </p>
           </motion.div>
         </div>
-      </section>
-
-      {/* Programs Section */}
-      <section className="py-20 bg-soft-white">
+      </section>      {/* Programs Section */}
+      <section className="py-12 xs:py-16 sm:py-20 bg-soft-white">
         <div className="container-custom">
           <motion.div 
-            className="text-center mb-12"
+            className="text-center mb-8 xs:mb-10 sm:mb-12"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="section-title text-deep-blue">
+            <h2 className="section-title text-deep-blue text-2xl xs:text-3xl sm:text-4xl lg:text-5xl">
               Our Programs
-              <div className="h-1 w-20 bg-bright-red mx-auto mt-3"></div>
+              <div className="h-1 w-16 xs:w-20 bg-bright-red mx-auto mt-3"></div>
             </h2>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+            <p className="text-base xs:text-lg text-gray-700 max-w-3xl mx-auto">
               We offer specialized training programs for all ages and skill levels, designed to help you reach your full potential.
             </p>
           </motion.div>
 
           {/* Program/Classes Tabs */}
-          <div className="flex justify-center mb-8">
-            <div className="inline-flex rounded-md shadow-sm">
+          <div className="flex justify-center mb-6 xs:mb-8">
+            <div className="inline-flex rounded-md shadow-sm w-full max-w-sm xs:max-w-none xs:w-auto">
               <button
                 onClick={() => setActiveTab('classes')}
-                className={`px-8 py-3 text-lg font-medium rounded-l-lg ${
+                className={`px-4 xs:px-6 sm:px-8 py-2 xs:py-3 text-sm xs:text-base sm:text-lg font-medium rounded-l-lg flex-1 xs:flex-none ${
                   activeTab === 'classes' 
                     ? 'bg-deep-blue text-soft-white' 
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -59,7 +56,7 @@ const Contact: React.FC = () => {
               </button>
               <button
                 onClick={() => setActiveTab('programs')}
-                className={`px-8 py-3 text-lg font-medium rounded-r-lg ${
+                className={`px-4 xs:px-6 sm:px-8 py-2 xs:py-3 text-sm xs:text-base sm:text-lg font-medium rounded-r-lg flex-1 xs:flex-none ${
                   activeTab === 'programs' 
                     ? 'bg-deep-blue text-soft-white' 
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -302,11 +299,10 @@ const Contact: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-            >
-              <div className="bg-gray-100 p-6 text-center">
+            >              <div className="bg-gray-100 p-6 text-center">
                 <h3 className="text-xl font-bold text-deep-blue">Basic</h3>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold">$89</span>
+                  <span className="text-4xl font-bold">₹1499</span>
                   <span className="text-gray-600">/month</span>
                 </div>
               </div>
@@ -341,12 +337,11 @@ const Contact: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <div className="bg-gradient-primary p-6 text-center text-soft-white">
+            >              <div className="bg-gradient-primary p-6 text-center text-soft-white">
                 <span className="bg-bright-red text-white text-sm font-bold px-3 py-1 rounded-full uppercase">Popular</span>
                 <h3 className="text-xl font-bold mt-2">Premium</h3>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold">$149</span>
+                  <span className="text-4xl font-bold">₹2499</span>
                   <span className="text-metallic-gray">/month</span>
                 </div>
               </div>
@@ -393,11 +388,10 @@ const Contact: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              <div className="bg-gray-100 p-6 text-center">
+            >              <div className="bg-gray-100 p-6 text-center">
                 <h3 className="text-xl font-bold text-deep-blue">Elite</h3>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold">$249</span>
+                  <span className="text-4xl font-bold">₹4499</span>
                   <span className="text-gray-600">/month</span>
                 </div>
               </div>

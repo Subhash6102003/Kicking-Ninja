@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const AboutUs: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="pt-20">
       {/* Hero Section */}
@@ -108,8 +112,9 @@ const AboutUs: React.FC = () => {
                 />
                 <div className="absolute -bottom-5 -left-5 w-80 h-80 bg-light-blue/20 rounded-lg -z-10"></div>
                 <div className="absolute -top-5 -right-5 w-40 h-40 bg-bright-red/20 rounded-lg -z-10"></div>
-                
-                <div className="bg-deep-blue p-6 rounded-lg absolute right-5 bottom-10 shadow-xl max-w-xs">
+                  {/* Quote box - positioned absolutely on desktop, below the image on mobile */}                <div className="bg-deep-blue p-6 rounded-lg shadow-xl max-w-xs w-full
+                                lg:absolute lg:right-5 lg:bottom-10
+                                relative mt-8 lg:mt-0 mx-auto lg:mx-0">
                   <h3 className="text-bright-red font-bold text-xl mb-2">Training Philosophy</h3>
                   <p className="text-soft-white">
                     "We believe in pushing beyond limits while maintaining perfect form. Excellence is not an accident, but a result of consistent training."

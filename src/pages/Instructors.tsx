@@ -364,6 +364,11 @@ const InstructorDetail: React.FC<{ instructor: typeof instructors[0] }> = ({ ins
 const Instructors: React.FC = () => {
   // State to track which instructor is being viewed in detail
   const [selectedInstructor, setSelectedInstructor] = React.useState<typeof instructors[0] | null>(null);
+  
+  // Scroll to top when component mounts
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="pt-20">      {/* Hero Section with Video Background */}

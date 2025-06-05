@@ -112,23 +112,58 @@
 /* Container styling */
 .container-custom {
   width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
   margin-right: auto;
   margin-left: auto;
+  max-width: 100%;
+}
+
+/* Mobile first responsive breakpoints */
+@media (min-width: 375px) {
+  .container-custom {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }
 
 @media (min-width: 640px) {
   .container-custom {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-custom {
     padding-right: 2rem;
     padding-left: 2rem;
+    max-width: 768px;
   }
 }
 
 @media (min-width: 1024px) {
   .container-custom {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-custom {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container-custom {
     padding-right: 4rem;
     padding-left: 4rem;
+    max-width: 1536px;
   }
 }
 
