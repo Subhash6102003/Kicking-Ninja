@@ -1,5 +1,6 @@
 {
-  "name": "kicking-ninja",
+    "$schema": "https://json.schemastore.org/package.schema.json",
+    "name": "kicking-ninja",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +22,7 @@
     "swiper": "^11.2.8",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://subhash6102003.github.io/kicking-ninja",
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
