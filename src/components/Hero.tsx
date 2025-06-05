@@ -3,18 +3,24 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
-  return (    <section className="relative min-h-screen bg-deep-blue flex items-center justify-center overflow-hidden">
+  return (
+    <section className="relative min-h-screen bg-deep-blue flex items-center justify-center overflow-hidden">
       {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-soft-black to-deep-blue opacity-90"></div>      {/* Background Image - Saurabh Kushwaha Action Shot */}
+      <div className="absolute inset-0 bg-gradient-to-r from-soft-black to-deep-blue opacity-90"></div>
+      {/* Background Image - Saurabh Kushwaha Action Shot */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{ 
           backgroundImage: `url('/assets/images/hero/saurabh-action.jpg')`,
           backgroundColor: '#06122f'  
         }}
-      ></div>      {/* Decorative elements - responsive sizing and positioning */}
-      <div className="hidden lg:block absolute top-10 lg:top-20 right-10 lg:right-20 w-32 lg:w-64 h-32 lg:h-64 rounded-full bg-accent-blue/10 blur-3xl"></div>
-      <div className="hidden lg:block absolute bottom-5 lg:bottom-10 left-5 lg:left-10 w-40 lg:w-80 h-40 lg:h-80 rounded-full bg-bright-red/5 blur-3xl"></div><div className="container-custom relative z-10 flex flex-col items-center md:items-start justify-center text-center md:text-left h-full pt-32 xs:pt-40 md:pt-32 pb-8 xs:pb-12 md:pb-12">
+      ></div>
+      {/* Decorative elements */}
+      <div className="absolute top-20 right-20 w-64 h-64 rounded-full bg-accent-blue/10 blur-3xl"></div>
+      <div className="absolute bottom-10 left-10 w-80 h-80 rounded-full bg-bright-red/5 blur-3xl"></div>
+      <div className="container-custom relative z-10 flex flex-col items-center md:items-start justify-center text-center md:text-left h-full pt-32 xs:pt-40 md:pt-32 pb-8 xs:pb-12 md:pb-12"
+        style={{ paddingTop: 'calc(5.5rem + env(safe-area-inset-top, 0px))' }} // fallback for mobile nav height
+      >
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
