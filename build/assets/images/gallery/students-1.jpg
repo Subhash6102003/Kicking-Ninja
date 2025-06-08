@@ -1,0 +1,12 @@
+<!-- Placeholder Gallery Image 4 - Students Training -->
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#0f0f23"/>
+  <rect x="50" y="50" width="500" height="300" fill="#282f6c" rx="10"/>
+  <circle cx="150" cy="150" r="25" fill="#e50800"/>
+  <circle cx="300" cy="150" r="25" fill="#e50800"/>
+  <circle cx="450" cy="150" r="25" fill="#e50800"/>
+  <rect x="100" y="220" width="400" height="80" fill="#1a1a2e" rx="5"/>
+  <text x="300" y="250" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold">Student Training</text>
+  <text x="300" y="280" text-anchor="middle" fill="#e0e0e0" font-size="14">Building Champions</text>
+  <text x="300" y="370" text-anchor="middle" fill="#e0e0e0" font-size="14">Next Generation Martial Artists</text>
+</svg>
