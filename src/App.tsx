@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 // Components
@@ -17,7 +17,7 @@ import Contact from './pages/Contact';
 import Shop from './pages/Shop';
 
 function App() {  return (
-    <Router>
+    <Router basename="/Kicking-Ninja">
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Navbar />
