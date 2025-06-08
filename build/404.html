@@ -3,25 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Kicking Ninja - Martial Arts Academy</title>
+    <meta http-equiv="refresh" content="0; url=/Kicking-Ninja/">
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script checks to see if a redirect is present in the query string,
-      // converts it back into the correct url and adds it to the
-      // browser's history using window.history.replaceState(...)
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = sessionStorage.redirect || l.search.slice(1);
-          if (decoded) {
-            sessionStorage.removeItem('redirect');
-            l.replace(l.pathname.split('/').slice(0, -1).join('/') + '/?/' + decoded);
-          }
-        }
-      }(window.location))
+      // This script takes the current url and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new url with the converted query string and hash fragment
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
     </script>
   </head>
   <body>
+    <p>Redirecting to Kicking Ninja...</p>
     <!-- IE required at least 512 bytes of data to show non-default 404. -->
     <div style="display:none;">
       <!-- padding for IE -->
