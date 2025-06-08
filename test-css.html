@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Test - Kicking Ninja</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .test-container {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        .status { 
+            padding: 10px; 
+            margin: 10px 0; 
+            border-radius: 5px; 
+        }
+        .success { background: rgba(34, 197, 94, 0.3); }
+        .error { background: rgba(239, 68, 68, 0.3); }
+        .link-test {
+            color: #60a5fa;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .link-test:hover {
+            color: #93c5fd;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🥋 Kicking Ninja - CSS Test Page</h1>
+        <div class="status success">
+            ✅ If you can see styled content, CSS is working!
+        </div>
+        
+        <h2>Testing Resource Paths:</h2>
+        <div>
+            <a href="./static/css/main.e2578638.css" class="link-test" target="_blank">Test Direct CSS Link</a>
+            <a href="./index.html" class="link-test">Test Index HTML</a>
+            <a href="./manifest.json" class="link-test" target="_blank">Test Manifest</a>
+        </div>
+        
+        <div style="margin-top: 20px;">
+            <p>If links work, the paths are correct.</p>
+            <p>If they don't work, we need to adjust the build configuration.</p>
+        </div>
+        
+        <script>
+            // Test if we can fetch the CSS file
+            fetch('./static/css/main.e2578638.css')
+                .then(response => {
+                    if (response.ok) {
+                        document.getElementById('css-status').innerHTML = 
+                            '<div class="status success">✅ CSS file is accessible</div>';
+                    } else {
+                        document.getElementById('css-status').innerHTML = 
+                            '<div class="status error">❌ CSS file not found (404)</div>';
+                    }
+                })
+                .catch(error => {
+                    document.getElementById('css-status').innerHTML = 
+                        '<div class="status error">❌ Error fetching CSS: ' + error.message + '</div>';
+                });
+        </script>
+        
+        <div id="css-status"></div>
+        
+        <div style="margin-top: 30px; font-size: 14px; opacity: 0.8;">
+            <p>This is a diagnostic page to test CSS loading issues.</p>
+            <p>Once CSS is working, visit the main site.</p>
+        </div>
+    </div>
+</body>
+</html>
