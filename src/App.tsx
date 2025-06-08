@@ -16,6 +16,7 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Shop from './pages/Shop';
 
+// Force cache invalidation - Build: 2025-06-08
 function App() {  return (
     <Router>
       <ScrollToTop />
